@@ -9,8 +9,6 @@ parent.addEventListener('click', (event) => {
     console.log(target);
     for (let i = 0; i < tabs.length; i++) {
         tabs[i].classList.remove('active');
-        if (target.closest('.img')) {
-            tabs[i].classList.add('active')
-        }
+        target.closest('.tab').classList.add('active');
     }
 })      
